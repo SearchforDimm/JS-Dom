@@ -32,6 +32,49 @@ sectionA.removeChild(link);
 // titleWrap.appendChild(newTitle);
 
 // sectionB.replaceChild(titleWrap, title);
+// const sectionB = document.getElementById('b');
+// const title = sectionB.getElementsByTagName("p")[0];
+
+// const titleWrap = document.createElement('h2');
+// const newTitle = document.createTextNode("Hello world!");
+// titleWrap.appendChild(newTitle);
+
+// sectionB.replaceChild(titleWrap, title);
+// const sectionB = document.getElementById('b');
+// const title = sectionB.getElementsByTagName("p")[0];
+
+// const titleWrap = document.createElement('h2');
+// const newTitle = document.createTextNode("Hello world!");
+// titleWrap.appendChild(newTitle);
+
+// sectionB.replaceChild(titleWrap, title);
+// sectionB.replaceChild(titleWrap, title);
+// const sectionB = document.getElementById('b');
+// const title = sectionB.getElementsByTagName("p")[0];
+
+// const titleWrap = document.createElement('h2');
+// const newTitle = document.createTextNode("Hello world!");
+// titleWrap.appendChild(newTitle);
+
+// sectionB.replaceChild(titleWrap, title);
+// sectionB.replaceChild(titleWrap, title);
+// const sectionB = document.getElementById('b');
+// const title = sectionB.getElementsByTagName("p")[0];
+
+// const titleWrap = document.createElement('h2');
+// const newTitle = document.createTextNode("Hello world!");
+// titleWrap.appendChild(newTitle);
+
+// sectionB.replaceChild(titleWrap, title);
+// sectionB.replaceChild(titleWrap, title);
+// const sectionB = document.getElementById('b');
+// const title = sectionB.getElementsByTagName("p")[0];
+
+// const titleWrap = document.createElement('h2');
+// const newTitle = document.createTextNode("Hello world!");
+// titleWrap.appendChild(newTitle);
+
+// sectionB.replaceChild(titleWrap, title);
 const sectionB = document.getElementById('b');
 const title = sectionB.getElementsByTagName("p")[0];
 
