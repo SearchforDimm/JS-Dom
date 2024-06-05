@@ -32,57 +32,26 @@ sectionA.removeChild(link);
 // titleWrap.appendChild(newTitle);
 
 // sectionB.replaceChild(titleWrap, title);
-// const sectionB = document.getElementById('b');
-// const title = sectionB.getElementsByTagName("p")[0];
-
-// const titleWrap = document.createElement('h2');
-// const newTitle = document.createTextNode("Hello world!");
-// titleWrap.appendChild(newTitle);
-
-// sectionB.replaceChild(titleWrap, title);
-// const sectionB = document.getElementById('b');
-// const title = sectionB.getElementsByTagName("p")[0];
-
-// const titleWrap = document.createElement('h2');
-// const newTitle = document.createTextNode("Hello world!");
-// titleWrap.appendChild(newTitle);
-
-// sectionB.replaceChild(titleWrap, title);
-// sectionB.replaceChild(titleWrap, title);
-// const sectionB = document.getElementById('b');
-// const title = sectionB.getElementsByTagName("p")[0];
-
-// const titleWrap = document.createElement('h2');
-// const newTitle = document.createTextNode("Hello world!");
-// titleWrap.appendChild(newTitle);
-
-// sectionB.replaceChild(titleWrap, title);
-// sectionB.replaceChild(titleWrap, title);
-// const sectionB = document.getElementById('b');
-// const title = sectionB.getElementsByTagName("p")[0];
-
-// const titleWrap = document.createElement('h2');
-// const newTitle = document.createTextNode("Hello world!");
-// titleWrap.appendChild(newTitle);
-
-// sectionB.replaceChild(titleWrap, title);
-// sectionB.replaceChild(titleWrap, title);
-// const sectionB = document.getElementById('b');
-// const title = sectionB.getElementsByTagName("p")[0];
-
-// const titleWrap = document.createElement('h2');
-// const newTitle = document.createTextNode("Hello world!");
-// titleWrap.appendChild(newTitle);
-
-// sectionB.replaceChild(titleWrap, title);
 const sectionB = document.getElementById('b');
 const title = sectionB.getElementsByTagName("p")[0];
 
 const titleWrap = document.createElement('h2');
 const newTitle = document.createTextNode("Hello world!");
 
+const textBaru = document.createElement("i")
+const textBaruIsi = document.createTextNode("jadi gini le...")
+textBaru.append(textBaruIsi);
+sectionB.prepend(textBaru);
 titleWrap.append(newTitle);
 title.replaceWith(titleWrap);
+
+const pBaru = document.getElementById('baru');
+pBaru.remove()
+// title.remove()
+
+sectionB.remove()
+sectionA.remove()
+judul.remove()
 
 
 titleWrap.style.backgroundColor = "lightblue";
