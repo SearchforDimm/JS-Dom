@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #303030;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#title {
+    color: #fff;
+    font-size: 4rem;
+}
+
+body.light {
+    color: #303030;
+    background-color: #fff;
+}
+body.light #myButton {
+    border: 1px solid #303030;
+    color: #303030;
+    transition: .3 ease all;
+}
+body.light #myButton:hover {
+    background-color: #303030;
+    color: #fff;
+}
+body.light #title {color: #303030;}
+#myButton {
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+#myButton:hover {
+    background-color: #fff;
+    color: #303030;
+}

@@ -26,3 +26,20 @@ body {
 .time-wrap h1{
     font-size: 12rem;
 }
+
+@media screen and (max-width:768px) {
+    .time-wrap h1 {
+        font-size: 7rem;
+    }
+    .time-wrap p {
+        font-size: 1rem;
+    }
+}
+    @media screen and (max-width:480px) {
+        .time-wrap h1 {
+            font-size: 3rem;
+        }
+        .time-wrap p {
+            font-size: .6rem;
+        }
+    }
