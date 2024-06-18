@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 800px;
+}
+
+.calculator-display {
+    background-color: #222;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:active {
+    background-color: #666;
+}
+
+button[data-action="add"],
+button[data-action="subtract"],
+button[data-action="multiply"],
+button[data-action="divide"] {
+    background-color: #f5923e;
+}
+
+button[data-action="add"]:active,
+button[data-action="subtract"]:active,
+button[data-action="multiply"]:active,
+button[data-action="divide"]:active {
+    background-color: #f56c42;
+}
+
+button[data-action="decimal"] {
+    background-color: #777;
+}
+
+button[data-action="decimal"]:active {
+    background-color: #999;
+}
+
+button[data-action="clear"] {
+    background-color: #e94c4c;
+    grid-column: span 2;
+}
+
+button[data-action="clear"]:active {
+    background-color: #e94c4c;
+}
+
+button.key-equal {
+    background-color: #00bfa5;
+    grid-column: span 2;
+}
+
+button.key-equal:active {
+    background-color: #00a38e;
+}
