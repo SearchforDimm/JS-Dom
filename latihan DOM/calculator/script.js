@@ -9,6 +9,7 @@ keys.addEventListener("click", function(e) {
         const action = key.dataset.action;
         const keyContent = key.textContent;
         const displayedNum = display.textContent
+        const previousKeyType = calculator.dataset.previousKeyType;
         if(!action) {
             if ( displayedNum === '0') {
                 display.textContent = keyContent
@@ -23,17 +24,42 @@ keys.addEventListener("click", function(e) {
             action === 'multiply' ||
             action === 'divide'
         ) {
-            key.classList.add('is-depressed')
+            key.classList.add('is-depressed');
+            calculator.dataset.previousKeyType = "operator";
+            calculator.dataset.firstValue = displayedNum;
+            calculator.dataset.operator = action;
         }
-
+        
+        Array.from(key.parentNode.children)
+        .forEach(k => k.classList.remove('is-depressed'))
+        
         if ( action === 'decimal') {
             display.textContent = displayedNum + '.'
         }
         // if ( action === 'clear') {
-        //     console.log("clear")
-        // }
-        // if ( action === 'calculate') {
-        //     console.log("calculate")
-        // }
+            //     console.log("clear")
+            // }
+            const calculate = (n1, operator, n2) => {
+                let result = '';
+    
+                if (operator === 'add') {
+                    result = parseFloat(n1) + parseFloat(n2)
+                } else if (operator === 'subtract') {
+                    result = parseFloat(n1) - parseFloat(n2)
+                } else if (operator === 'multiply') {
+                    result = parseFloat(n1) * parseFloat(n2)
+                } else if (operator === 'divide') {
+                    result = parseFloat(n1) / parseFloat(n2)
+                }
+                  
+                  return result
+            }
+        if ( action === 'calculate') {
+            const operator = calculator.dataset.operator;
+            const firstValue = calculator.dataset.firstValue
+            const secondValue = displayedNum;
+            display.textContent = calculate(firstValue, operator, secondValue)
+        }
+        
     }
 })
